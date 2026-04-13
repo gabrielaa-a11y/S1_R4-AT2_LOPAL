@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="questao3"/>
+        <attribute name="authors" value="I1HSA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 10:08:55 "/>
+        <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODMwOzIwMjYtMDQtMTM7IjEwOjAxOjI1ICI7MjM5OA=="/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODMwOzIwMjYtMDQtMTM7IjEwOjA4OjU1ICI7MTsyNTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="altura" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite sua altura:&quot;" newline="True"/>
+            <input variable="altura"/>
+            <if expression="altura &gt;=1*40">
+                <then>
+                    <output expression="&quot;Pode entrar no brinquedo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Altura insuficiente voce nao pode entrar no brinquedo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
