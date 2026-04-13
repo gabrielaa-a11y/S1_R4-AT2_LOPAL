@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="questao4"/>
+        <attribute name="authors" value="I1HSA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 10:13:37 "/>
+        <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODMwOzIwMjYtMDQtMTM7IjEwOjA5OjMyICI7MjQwNA=="/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODMwOzIwMjYtMDQtMTM7IjEwOjEzOjM3ICI7MTsyNTEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="senha, confirmar" type="String" array="False" size=""/>
+            <output expression="&quot;Crie uma senha:&quot;" newline="True"/>
+            <input variable="senha"/>
+            <output expression="&quot;Digite a senha novamente:&quot;" newline="True"/>
+            <input variable="confirmar"/>
+            <if expression="(senha = confirmar)">
+                <then>
+                    <output expression="&quot;Acesso Permitido&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Senha Incorreta&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
