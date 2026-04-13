@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="questao2"/>
+        <attribute name="authors" value="I1HSA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 10:00:13 "/>
+        <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODMwOzIwMjYtMDQtMTM7IjA5OjQ5OjIzICI7MjQxNg=="/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODMwOzIwMjYtMDQtMTM7IjEwOjAwOjEzICI7MjsyNTAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, desconto, total, cashback" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor da compra:&quot;" newline="True"/>
+            <input variable="valor"/>
+            <if expression="valor &gt;150">
+                <then>
+                    <assign variable="desconto" expression="valor * 0.02"/>
+                    <assign variable="total" expression="valor - desconto"/>
+                    <output expression="&quot;Desconto: &quot; &amp; desconto" newline="True"/>
+                    <output expression="&quot;Total: &quot; &amp; total" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="cashback" expression="valor * 0.02"/>
+                    <output expression="&quot;Total: &quot; &amp; valor" newline="True"/>
+                    <output expression="&quot;Cashback: &quot; &amp; cashback" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
